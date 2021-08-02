@@ -1,0 +1,19 @@
+server:
+  port: 8100
+spring:
+  redis:
+    host: localhost
+    port: 6379
+    database: 0
+redis:
+  str_prefix:
+    docker_image: "DOCKER_IMAGE:"
+docker:
+  config:
+    added_volume: "/home"
+    container_workdir: "/usr/container/docker/workdir"
+    default_image: "hello-world"
+  engine:
+    protocol: tcp
+    host: localhost
+    port: 2375
